@@ -8499,6 +8499,9 @@ function destroyComponent(id) {
   component.cleanup();
   delete components[id];
 }
+function hasComponent(id) {
+  return !!components[id];
+}
 function findComponent(id) {
   let component = components[id];
   if (!component)
